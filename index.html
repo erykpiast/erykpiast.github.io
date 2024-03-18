@@ -1,29 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Eryk Napierała on GitHub.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio - Eryk Napierała</title>
 </head>
+
 <body>
-
     <header>
-        <h1>Eryk Napierała on GitHub.com</h1>
-    </header>
-    
-    <ul class="projects">
-        <li class="projects__project">
-            <a href="/player" class="projects__project__link">Player</a>
-        </li>
-        <li class="projects__project">
-            <a href="/ractivejs-refluxjs-todomvc" class="projects__project__link">RactiveJS + RefluxJS - TodoMVC</a>
-        </li>
-        <li class="projects__project">
-            <a href="/online-css-autoprefixer" class="projects__project__link">Online CSS Autoprefixer</a>
-        </li>
-        <li class="projects__project">
-            <a href="/rxjs-react-poc" class="projects__project__link">RxJS + React POC</a>
-        </li>
-    </ul>
+        <h1>Eryk Napierała</h1>
+        <p>Staff Software Engineer, Frontend</p>
+        <address>
+            <dl>
+                <dt>Location:</dt>
+                <dd>Wrocław, Poland</dd>
 
+                <dt>Email:</dt>
+                <dd><a href="mailto:eryk.piast@gmail.com">eryk.piast@gmail.com</a></dd>
+
+                <dt>Phone:</dt>
+                <dd>+48 667 276 781</dd>
+
+                <dt>LinkedIn:</dt>
+                <dd><a href="https://www.linkedin.com/in/erykpiast/">in/erykpiast</a></dd>
+
+                <dt>GitHub:</dt>
+                <dd><a href="https://github.com/erykpiast">erykpiast</a></dd>
+            </dl>
+        </address>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>I'm a seasoned software engineer, with 11 years of professional experience.<br />
+                I started coding when I was evelen years old, which means I code for 2/3 of my life.<br />
+                I tried myself in companies at different stages and of different sizes.<br />
+                I learned I thrive the most at mid-size start-ups and scale-ups.<br />
+                I use my skills to solve real people's problems. Very often the solution isn't code.<br />
+                <strong>I want to create products that people love.</strong>
+            </p>
+        </section>
+
+        <section>
+            <h2>Current role</h2>
+            <article>
+                <h3>Staff Software Engineer @ Hotjar</h3>
+                <p>Since May 2020, I'm leading frontend development at digital experience analytics company.<br />
+                    I care about technical vision, alignment between teams, and personal development of fellow
+                    engineers.<br />
+                    I enable my collegues to do their jobs and I lead by example.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Tech Stack</h2>
+            <p>I'm a fast learner and always use the right tool for the job.<br />
+                Sometimes it means I use what I'm most familair with.</p>
+            <ul>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>
+                    <style>
+                        .yes-I-know-css-a-bit:hover {
+                            background: linear-gradient(calc(var(--gradient-angle, 45) * 1deg), #ff0000, #00ff00);
+                            -webkit-background-clip: text;
+                            background-clip: text;
+                            color: transparent;
+                            animation: rotateGradient 5s ease-in-out infinite;
+                        }
+
+                        @property --gradient-angle {
+                            syntax: '<number>';
+                            initial-value: 0;
+                            inherits: false;
+                        }
+
+                        @keyframes rotateGradient {
+                            0% {
+                                --gradient-angle: 0;
+                            }
+
+                            100% {
+                                --gradient-angle: 359;
+                            }
+                        }
+                    </style>
+                    <span class="yes-I-know-css-a-bit">(S)CSS</span>
+                </li>
+                <li>Jest</li>
+                <li>Node.js</li>
+                <li>Webpack</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="https://www.hotjar.com/blog/perceived-performance-optimization/">How we optimized perceived
+                        performance to improve our KPIs: a Hotjar case study</a> @ Hotjar Engineering Blog</li>
+                <li><a href="https://www.hotjar.com/blog/temporal-dead-zone/">Temporal Dead Zone: the lesser-known part
+                        (and how to avoid it)</a> @ Hotjar Engineering Blog</li>
+                <li><a
+                        href="https://dev.to/erykpiast/how-to-use-vscode-as-your-git-editor-only-when-you-call-git-from-within-vscode-19an">How
+                        to use VSCode as your Git editor... only when you call Git from within VSCode</a> @ dev.to</li>
+                <li><a href="https://dev.to/erykpiast/a-spread-a-rest-and-empty-values-51d6">A spread, a rest and empty
+                        values</a> @ dev.to</li>
+                <li><a
+                        href="https://dev.to/erykpiast/two-bash-scripts-i-cannot-live-without-when-working-with-git-44a1">Two
+                        Bash scripts I cannot live without when working with Git</a> @ dev.to</li>
+                <li><a href="https://blog.allegro.tech/2019/11/performance-of-javascript-optional-chaining.html">Performance
+                        of JavaScript optional chaining</a> @ Allegro Tech Blog</li>
+                <li><a href="https://blog.allegro.tech/2019/09/page-visibility-and-performance-metrics.html">Page
+                        visibility and performance metrics
+                    </a> @ Allegro Tech Blog</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Side projects</h2>
+            <ul>
+                <li><a href="https://github.com/erykpiast/serialize-dom">serialize-dom</a> - yet another attempt to create the
+                    fastest DOM serialisation library</li>
+
+                <li><a href="https://github.com/erykpiast/webpack-stats-explorer">Webpack Stats Explorer</a> - created
+                    to learn ReasonML and help myself in my Web Performance Engineer role at Allegro</li>
+                <li><a href="https://github.com/erykpiast/online-css-autoprefixer">Online CSS Autoprefixer</a> - created to
+                    learn Cycle.js framework and test reactive frontend architecture in practice</li>
+                <li><a href="https://github.com/erykpiast/player">Player</a> - generic events player that supports rewinding and adaptive seeking</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Eryk Napierała. No rights reserved.</p>
+    </footer>
 </body>
-</html>
